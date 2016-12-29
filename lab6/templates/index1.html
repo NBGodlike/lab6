@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+<body>
+
+ {% for Course in Courses %}
+ <p>Название курса-{{ Course.Duration }}<br>
+    Длительность курса-{{ Course.Name }}<br>
+    Преподаватель-{{ Course.Teacher }}<br>
+    Стоимость курса-{{ Course.Value }}<br>
+ </p>
+
+ <hr/>
+ {% endfor %}
+<html>
+ <body>
+  <form action="http://127.0.0.1:8000/course/comment">
+   <button>
+       <img src="{% static 'css/feedback.jpg' %}" width="25" height="25" alt="" style="">
+       Comments
+   </button></p>
+  </form>
+ </body>
+</html>
+</body>
+</html>
